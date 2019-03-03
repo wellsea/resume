@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="text-center">
+      <img src="./assets/img/logo.png" alt="井海洋" width="168">
+    </div>
     <router-view/>
   </div>
 </template>
