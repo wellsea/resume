@@ -33,7 +33,7 @@
          <a target="_blank" href="https://www.bjxcaifu.com">北极熊链盟PC端</a>
        </div>
        <div class="alert alert-info" role="alert">
-         <a target="_blank" href="https://www.bjxcaifu.com">北极熊链盟H5端</a>
+         <a target="_blank" href="https://www.bjxcaifu.com/weixin">北极熊链盟H5端</a>
        </div>
        <div class="alert alert-info" role="alert">
          <a target="_blank" href="http://home.p2p.bjxcaifu.com">北极熊链盟后台</a>
@@ -83,6 +83,8 @@ export default {
       color: #2c3e50
     a
       color:inherit
+      display: block
+      height:100%
     .head
       padding: 15px
       position: relative
