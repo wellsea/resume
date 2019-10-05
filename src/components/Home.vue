@@ -2,8 +2,8 @@
  <div class="home">
    <div class="head">
      <h2>井海洋</h2>
-     <p>前端开发工程师   18k~22k</p>
-     <p><span class="glyphicon glyphicon-earphone"></span>17317582672</p>
+     <p>前端开发工程师   20k~25k</p>
+     <p><span class="glyphicon glyphicon-earphone"></span>13339077379</p>
      <p>四年前端开发经验，半年带实习生经验；</p>
      <p>较强的沟通和自我学习能力，良好的团队合作精神。</p>
      <img src="@/assets/img/logo.png" alt="井海洋">
