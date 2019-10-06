@@ -3,8 +3,12 @@
     <h2>井海洋</h2>
     <p>前端开发工程师 20k~25k</p>
     <p>
-      <van-icon name="phone" />
+      <van-icon name="phone-o" />
       <a href="tel:13339077379">13339077379</a>
+    </p>
+    <p>
+      <van-icon name="envelop-o" />
+      <a href="javascript:;">wellseajhy@163.com</a>
     </p>
     <p>四年前端开发经验，1年带实习生经验；</p>
     <p>较强的沟通和自我学习能力，良好的团队合作精神。</p>
