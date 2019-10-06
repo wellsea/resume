@@ -8,7 +8,7 @@
     </p>
     <p>四年前端开发经验，1年带实习生经验；</p>
     <p>较强的沟通和自我学习能力，良好的团队合作精神。</p>
-    <div class="img"></div>
+    <img src="../../assets/img/logo.png" alt="">
   </div>
 </template>
 
@@ -30,13 +30,12 @@
       margin-bottom 10px
       i
         vertical-align: middle
-    .img
+    img
       width: 90px
       height 126px
       position: absolute
       right 15px
       top: 15px
-      background url("../../assets/img/logo.png") center no-repeat #eee
-      background-size contain
+      pointer-events none
 
 </style>
