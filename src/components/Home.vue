@@ -3,24 +3,11 @@
     <HeaderItem></HeaderItem>
     <div class="flex tac bold">
       <div class="head-title item"
-           :class="{current:active==0}"
-           @click="active=0">
-        掌握技能
-      </div>
-      <div class="head-title item"
-           :class="{current:active==1}"
-           @click="active=1">
-        工作经历
-      </div>
-      <div class="head-title item"
-           :class="{current:active==2}"
-           @click="active=2">
-        教育经历
-      </div>
-      <div class="head-title item"
-           :class="{current:active==3}"
-           @click="active=3">
-        线上作品
+           v-for="(item, index) in tabList"
+           :key="index"
+           v-text="item"
+           :class="{current:active==index}"
+           @click="tabClick(index)">
       </div>
     </div>
     <div class="contains">
@@ -50,7 +37,18 @@
     },
     data() {
       return {
-        active: 0
+        active: 0,
+        tabList: [
+          '掌握技能',
+          '工作经历',
+          '教育经历',
+          '线上作品'
+        ]
+      }
+    },
+    methods: {
+      tabClick (index) {
+        this.active = index
       }
     }
   }
@@ -65,8 +63,8 @@
     >div
       border-bottom: 2px solid #eee
       line-height 40px
-      -webkit-transition: all .5s
-      transition: all .5s
+      -webkit-transition: all .3s
+      transition: all .3s
       font-size 16px
       &.current
         border-bottom-color: #42b983
