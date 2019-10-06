@@ -1,19 +1,20 @@
 <template>
-    <div class="info">
-      {{id}}
-    </div>
+  <div class="info">
+    <InfoItem :id="id"></InfoItem>
+  </div>
 </template>
 
 <script>
+
+  import InfoItem from "./child/InfoItem"
+
   export default {
     name: "workerInfo",
-    data () {
-      return {
-        id: ''
+    components: {InfoItem},
+    computed: {
+      id() {
+        return this.$route.query.id
       }
-    },
-    mounted() {
-      this.id = this.$route.query.id;
     }
   }
 </script>

@@ -23,7 +23,7 @@
     padding: 15px
     position: relative
     a
-      color inherit
+      color #2aabd2
     h2
       padding 15px 0 28px
     p
