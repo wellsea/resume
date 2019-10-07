@@ -1,15 +1,17 @@
 <template>
   <div class="home">
     <HeaderItem></HeaderItem>
-    <div class="flex tac bold">
-      <div class="head-title item"
-           v-for="(item, index) in tabList"
-           :key="index"
-           v-text="item"
-           :class="{current:active==index}"
-           @click="tabClick(index)">
+    <van-sticky>
+      <div class="flex tac bold">
+        <div class="head-title item"
+             v-for="(item, index) in tabList"
+             :key="index"
+             v-text="item"
+             :class="{current:active==index}"
+             @click="tabClick(index)">
+        </div>
       </div>
-    </div>
+    </van-sticky>
     <div class="contains">
       <Skills v-if="active==0"></Skills>
       <workItem v-if="active==1"></workItem>
@@ -60,6 +62,7 @@
     padding 0 15px
   .flex
     padding 0 15px
+    background-color: #fff
     >div
       border-bottom: 2px solid #eee
       line-height 40px

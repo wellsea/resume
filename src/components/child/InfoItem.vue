@@ -1,9 +1,11 @@
 <template>
   <ul class="info-page" v-if="data">
-    <li class="info-page-title">
-      <h2>{{data.name}}</h2>
-      <p>{{data.workTime}}</p>
-    </li>
+    <van-sticky>
+      <li class="info-page-title">
+        <h2>{{data.name}}</h2>
+        <p>{{data.workTime}}</p>
+      </li>
+    </van-sticky>
     <li>
       <h3>项目经历</h3>
       <van-collapse v-model="active">
