@@ -21,7 +21,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
   .download {
     position: fixed;
     right: 0;
