@@ -1,40 +1,110 @@
 <template>
-  <ul class="info-page" v-if="data">
-    <li class="info-page-title">
-      <h2>{{data.name}}</h2>
-      <p>{{data.workTime}}</p>
-    </li>
-    <li>
-      <h3>项目经历</h3>
-      <van-collapse v-model="active">
-        <van-collapse-item
-          v-for="(item, index) in data.project"
-          :title="item.name"
-          :name="item.id"
-          :key="index">
-          <h4 v-if="item.website">线上地址：<a :href="item.website" target="_blank" v-text="item.name"></a></h4>
-          <h4>开发时间：{{item.time}}</h4>
-          <h4>项目描述</h4>
-          <div class="info-page-desc">
-            <p v-text="item.desc"></p>
-          </div>
-          <h4>职责描述</h4>
-          <div class="info-page-desc">
-            <p v-for="(desc, i) in item.jobDesc" v-text="i+1 +'、'+desc" :key="i"></p>
-          </div>
-        </van-collapse-item>
-      </van-collapse>
-    </li>
-  </ul>
+  <div>
+    <ul class="info-page" v-if="data">
+      <li class="info-page-title">
+        <h2>{{data.name}}</h2>
+        <p>{{data.workTime}}</p>
+      </li>
+      <li>
+        <h3>项目经历</h3>
+        <van-collapse v-model="active">
+          <van-collapse-item
+            v-for="(item, index) in data.project"
+            :title="item.name"
+            :name="item.id"
+            :key="index">
+            <h4 v-if="item.website">线上地址：<a :href="item.website" target="_blank" v-text="item.name"></a></h4>
+            <h4>开发时间：{{item.time}}</h4>
+            <h4>项目描述</h4>
+            <div class="info-page-desc">
+              <p v-text="item.desc"></p>
+            </div>
+            <h4>职责描述</h4>
+            <div class="info-page-desc">
+              <p v-for="(desc, i) in item.jobDesc" v-text="i+1 +'、'+desc" :key="i"></p>
+            </div>
+            <div v-if="data.id==10&&item.imgUrl" class="mp">
+              <h4>小程序码</h4>
+              <img :src="item.imgUrl" alt="" @click="prev(item.imgUrl)">
+            </div>
+          </van-collapse-item>
+        </van-collapse>
+      </li>
+    </ul>
+    <van-popup v-model="show" :close="handleShow(false)">
+      <img :src="bigImg" alt="">
+    </van-popup>
+  </div>
 </template>
 
 <script>
   export default {
     props: ['id'],
-    data() {
+    data () {
       return {
         active: [1],
         companyData: [
+          {
+            name: '上海优动网络科技有限公司',
+            workTime: '2019-10~2020-03',
+            id: 10,
+            project: [
+              {
+                name: '好货播报小程序',
+                id: 1,
+                website: '',
+                time: '2019.10~2019-11',
+                desc: '电商小程序',
+                jobDesc: [
+                  '使用taro完成小程序功能开发',
+                  '主要负责支付、分享海报、转发好友、订单模块'
+                ],
+                imgUrl:require('./../../assets/img/yd.jpg')
+              }, {
+                name: '同程特卖小程序',
+                id: 2,
+                website: '',
+                time: '2019.11~2019-12',
+                desc: '与同程生活合作，开发h5，嵌入同程生活小程序',
+                jobDesc: [
+                  '使用react+redux+ant开发h5',
+                  '对接小程序webview，和小程序进行交互，实现转发、跳转、支付等功能'
+                ],
+                imgUrl:require('./../../assets/img/tc.jpeg')
+              }, {
+                name: '知花知果品牌清仓小程序',
+                id: 3,
+                website: '',
+                time: '2020.01~2020。02',
+                desc: '电商小程序，从知花知果引流',
+                jobDesc: [
+                  '从知花知果小程序跳转至知花知果品牌清仓小程序',
+                  '实现团长绑定和分佣'
+                ],
+                imgUrl:require('./../../assets/img/zh.png')
+              }, {
+                name: '咪店精选小程序',
+                id: 4,
+                website: '',
+                time: '2020.02~至今',
+                desc: '对接咪店优选小程序，使用h5嵌入。',
+                jobDesc: [
+                  '使用react+redux+ant开发h5',
+                  '对接小程序webview，和小程序进行交互，实现转发、跳转、支付等功能'
+                ],
+                imgUrl:require('./../../assets/img/md.jpg')
+              }, {
+                name: '林云特卖小程序',
+                id: 5,
+                website: '',
+                time: '20120.03~至今',
+                desc: '电商小程序',
+                jobDesc: [
+                  '开发中'
+                ]
+              }
+            ]
+          },
           {
             name: '住建鸟网络科技有限公司',
             workTime: '2019-03~2019-09',
@@ -265,13 +335,26 @@
             ]
           }
         ],
-        data: null
+        data: null,
+        bigImg:'',
+        show:true
       }
     },
-    mounted() {
-      for (let i in this.companyData){
+    methods: {
+      prev(url){
+        console.log(url);
+        this.bigImg = url;
+        this.handleShow(true);
+        this.show =true
+      },
+      handleShow(flag){
+        this.show = flag
+      }
+    },
+    mounted () {
+      for (let i in this.companyData) {
         if (this.id == this.companyData[i].id) {
-          this.data = this.companyData[i];
+          this.data = this.companyData[i]
           return
         }
       }

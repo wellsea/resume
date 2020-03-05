@@ -25,6 +25,14 @@
         active: 0,
         company: [
           {
+            id: 10,
+            date: '2019-10~2020-03',
+            name: '上海优动网络科技有限公司',
+            desc: '电商小程序',
+            logo: require('./../assets/img/yd.jpg'),
+            skill: 'Taro, react, redux, ant-design, 小程序'
+          },
+          {
             id: 1,
             date: '2018-11~2019-09',
             name: '住建鸟网络科技有限公司',
