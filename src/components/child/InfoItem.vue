@@ -53,7 +53,7 @@
                 name: '好货播报小程序',
                 id: 1,
                 website: '',
-                time: '2019.10~2019-11',
+                time: '2019-10~2019-11',
                 desc: '电商小程序',
                 jobDesc: [
                   '使用taro完成小程序功能开发',
@@ -64,7 +64,7 @@
                 name: '同程特卖小程序',
                 id: 2,
                 website: '',
-                time: '2019.11~2019-12',
+                time: '2019-11~2019-12',
                 desc: '与同程生活合作，开发h5，嵌入同程生活小程序',
                 jobDesc: [
                   '使用react+redux+ant开发h5',
@@ -75,7 +75,7 @@
                 name: '知花知果品牌清仓小程序',
                 id: 3,
                 website: '',
-                time: '2020.01~2020。02',
+                time: '2020-01~2020-02',
                 desc: '电商小程序，从知花知果引流',
                 jobDesc: [
                   '从知花知果小程序跳转至知花知果品牌清仓小程序',
@@ -86,7 +86,7 @@
                 name: '咪店精选小程序',
                 id: 4,
                 website: '',
-                time: '2020.02~至今',
+                time: '2020-02~至今',
                 desc: '对接咪店优选小程序，使用h5嵌入。',
                 jobDesc: [
                   '使用react+redux+ant开发h5',
@@ -97,7 +97,7 @@
                 name: '林云特卖小程序',
                 id: 5,
                 website: '',
-                time: '20120.03~至今',
+                time: '20120-03~至今',
                 desc: '电商小程序',
                 jobDesc: [
                   '开发中'
@@ -114,7 +114,7 @@
                 name: '招工找活',
                 id: 1,
                 website: 'http://uapp.zjbird.com/jobs/',
-                time: '2019.3~至今',
+                time: '2019.3~2019-9',
                 desc: '为业主和工友提供一个发布优质项目，寻找优质工友的一个平台。',
                 jobDesc: [
                   '使用node+webpack+vue2.0+vue-resource完成页面制作及数据交互',
@@ -126,7 +126,7 @@
                 name: '工友圈',
                 id: 2,
                 website: 'http://uapp.zjbird.com/jobs/#/workerCircleIndex',
-                time: '2019.5~至今',
+                time: '2019.5~2019-9',
                 desc: '提供工友发布和分享帖子，交流技术的平台。',
                 jobDesc: [
                   '使用ali-oss上传图片和视频',
@@ -136,7 +136,7 @@
                 name: '鸟币签到',
                 id: 3,
                 website: 'http://uapp.zjbird.com/jobs/#/signIn?workerId=19853',
-                time: '2019.6~至今',
+                time: '2019.6~2019-9',
                 desc: '工友每日签到送鸟币，并可以提现。',
                 jobDesc: [
                   '调用后台接口实现签到',
@@ -146,7 +146,7 @@
                 name: '中国工友网',
                 id: 4,
                 website: 'http://www.zggy888.com',
-                time: '2019.7~至今',
+                time: '2019.7~2019-9',
                 desc: '查询工友信息及施工案例的平台。',
                 jobDesc: [
                   '使用vue3.0+axios完成页面制作及数据交互',
@@ -157,7 +157,7 @@
                 name: '住建鸟官网',
                 id: 5,
                 website: 'http://zjbird.com',
-                time: '2019.5~至今',
+                time: '2019.5~2019-9',
                 desc: '住建鸟官网。',
                 jobDesc: [
                   '使用vue2.0+less+jsp+jquery完成页面制作及数据交互'
