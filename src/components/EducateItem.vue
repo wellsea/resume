@@ -1,7 +1,7 @@
 <template>
     <div class="educate">
       <div class="flex">
-        <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=361bf8baa70f4bfb98dd960662261395/5ab5c9ea15ce36d36120141539f33a87e950b1eb.jpg" alt="黄山学院">
+        <img src="https://tc.tieqing.com/ly/html/images/20210512/kmoj65upumo/202105121620822483577274.jpg" alt="黄山学院">
         <div class="school">
           <h3>黄山学院</h3>
           <p>统招<span>2010-09~2014-06</span></p>

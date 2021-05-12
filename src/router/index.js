@@ -6,6 +6,7 @@ import workerInfo from '@/components/workerInfo'
 Vue.use(Router)
 
 export default new Router({
+  base: '/resume/',
   routes: [
     {
       path: '/',
